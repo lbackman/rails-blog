@@ -7,9 +7,14 @@ Our articles have <%= Comment.public_count %> comments in total.
   <% @articles.each do |article| %>
     <% unless article.archived? %>
       <div class="article">
-        <%= link_to article.title, article %>
+        <%= link_to article.title, article, class: "title" %>
         <br><br>
         <%= article.body.split.first(7).join(' ').concat(' ...') %>
+        <br><br>
+        <div class="postinfo">
+          Posted
+          <%= article.created_at %>
+        </div>
       </div>
     <% end %>
   <% end %>

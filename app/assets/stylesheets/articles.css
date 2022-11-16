@@ -2,9 +2,13 @@
   box-sizing: border-box;
 }
 
+li {
+  list-style-type: none;
+}
+
 a,
 a:visited {
-  color: blue;
+  color: inherit;
 }
 
 :root {
@@ -21,4 +25,15 @@ a:visited {
   width: 100%;
   border: 1px solid black;
   padding: 10px;
+}
+
+.postinfo {
+  font-size: 0.8rem;
+  color: rgba(0, 0, 0, 0.448);
+}
+
+.title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: rgba(17, 16, 16, 0.795);
 }
